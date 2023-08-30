@@ -45,7 +45,6 @@ header{
     width: 100%;
     top: 0;
     z-index: 9999;
-    border: 2px solid red;
 }
 
 .headerBg{
@@ -63,7 +62,6 @@ header{
 .navbar .navbar-left{
     display: flex;
     width: 40%;
-    border: 2px solid red;
 }
 
 .navbar .navbar-left ul{
@@ -81,7 +79,6 @@ header{
     justify-content: center;
     align-items: center;
     width: 20%;
-    border: 2px solid red;
 }
 
 .navbar .navbar-logo img{
@@ -93,7 +90,6 @@ header{
     display: flex;
     justify-content: end;
     width: 40%;
-    border: 2px solid red;
 }
 
 .navbar .navbar-right ul{
@@ -169,6 +165,7 @@ main{
     text-align: center;
     justify-content: center;
 }
+
 .gallery img{
 height: 350px;
 width: 100%;
@@ -487,16 +484,74 @@ footer{
         right: 0;
     }
 
+    .navbar-logo img{
+        width: 60px;
+    }
+
+
+
     .headerBg{
         .navbar{
             margin-top: 2rem;
         }
     }
 
+    .navbar-left.active{
+        display: flex;
+        justify-content: center;
+        top: 100%;
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 4rem;
+    }
+
+    .navbar-left.active ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-left.active ul li{
+        margin-top: 1rem;
+    }
+
+    .navbar-right.active{
+        margin-top: 9rem;
+        display: flex;
+        justify-content: center;
+        top:170%;
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 250px;
+    }
+
+    .navbar-right.active ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-right.active ul li{
+        margin-top: 1rem;
+    }
+
     #menu-icon{
         display: block;
         font-size: 3.5rem;
-        margin-left: 4.5rem;
+        margin-left: 15rem;
+    }
+
+    .new-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery{
+        width: 80%;
     }
    
 }
