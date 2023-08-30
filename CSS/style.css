@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Hind+Madurai&family=Pacifico&family=Roboto&family=Rowdies:wght@300&family=Zilla+Slab:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ h1{
     text-align: center;
     font-family: 'Zilla Slab', serif;
     font-size: 60px;
+    margin-top: 40px;
 }
 button{
     margin-top: 10px;
@@ -33,12 +35,12 @@ button{
 }
 header{ 
     height: 70px;
-    box-shadow: 0px 8px 15px rgba(82, 82, 82, 0.253);
+    /* box-shadow: 0px 8px 15px rgba(82, 82, 82, 0.253); */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 9999;
-    background-color: white;
+
 }
 .navbar{
     display: flex;
@@ -56,17 +58,25 @@ header{
 }
 .navbar img{
     display: flex;
-    width: 50px;
-    height: 70px;
-    margin-top: 2px;
+    width: 30px;
+    height: 50px;
 }
 header{
     display: flex;
     width: 100%;
 }
+.headerBg{
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(82, 82, 82, 0.253);
+}
 .navbar ul li a{
     margin-left: 30px;
 }
+
+.navbar ul li a:hover{
+    color: #C18845;
+}
+
 .navbar-left{
     display: flex;
     width: 39%;
@@ -74,6 +84,7 @@ header{
 .navbar-right{
     display: flex;
     width: 40%;
+    justify-content: flex-end;
 }
 .navbar-logo{
     display: flex;
@@ -82,6 +93,9 @@ header{
     margin-right: 110px;
     text-align: center;
     justify-content: center;
+}
+#menu-icon{
+    display: none;
 }
 main{
     margin-top: 90px;
@@ -151,9 +165,6 @@ main{
 height: 350px;
 width: 100%;
 }
-.gallery button{
-
-}
 .gallery .desc{
     font-size: 20px;
     font-family: 'Zilla Slab', serif;
@@ -220,9 +231,6 @@ width: 100%;
     border-radius: 10px;
 }
 
-
-
-
 .box h1{
     margin-bottom: 50px;
     margin-top: 50px;
@@ -258,10 +266,7 @@ width: 100%;
     justify-content: center;
     text-align: center;
 }
-.bon h1{
-    margin-bottom: 50px;
-    margin-top: 30px;
-}
+
 
 .bon input{
     border: none;
@@ -380,16 +385,21 @@ footer{
 }
 
 .first{
-    display: flex;
+    margin-bottom: 70px;
 }
+.second{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
 
 .conseil{
     display: flex;
     width: 100%;
-align-items: center;
+    align-items: center;
 }
 .conseil img{
-    width: 30%;
+    width: 40%;
 }
 .categorie .active{
     background-color: #204F15;
@@ -403,4 +413,70 @@ align-items: center;
 .conseil .fleur button{
     margin-left: 40%;
 }
- 
+.conseil h1{
+    font-size: 40px;
+}
+.conseil{
+    margin-bottom: 10px;
+}
+.astuces{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    box-shadow: 0px 8px 15px rgba(82, 82, 82, 0.253);
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.astuces h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.astu{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.aboutfirst{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.aboutfirst img{
+    width: 50%;
+}
+.abtxt{
+    display: flex;
+    flex-direction: column;
+}
+
+.abtxt button{
+    margin-top: 10px;
+    justify-content: center;
+    margin-left: 40%;
+}
+.discover{
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 700px) {
+    .navbar-left{
+        top: -500%;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .navbar-right{
+        top: -500%;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+   
+}
